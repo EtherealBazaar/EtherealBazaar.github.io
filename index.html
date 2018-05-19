@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ethereal Bazaar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Keywords" content="ethereal bazaar merchant goods services sell listing trustless ico token ethereum">
+  <meta name="Description" content="A network of merchants exchanging goods and services in a trustless marketplace">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+  <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  
+</head>
+<body>
+ <div id="app">
+   <v-app light>
+    <v-toolbar class="white">
+      <v-toolbar-title v-text="title"></v-toolbar-title>
+    </v-toolbar>
+    <v-content>
+      <section>
+        <v-parallax src="assets/hero.jpg" height="500">
+          <v-layout
+            column
+            align-center
+            justify-center
+            class="white--text"
+          >
+          <img src="assets/logo.png" alt="Ethereal Bazaar" height="200">         
+            <h1 class="white--text mb-2 display-1 text-xs-center">Ethereal Bazaar</h1>
+            <div class="subheading mb-3 text-xs-center">A network of merchants exchanging goods and services for cryptocurrency</div>
+            <v-btn
+              class="blue lighten-2 mt-5"
+              dark
+              large
+              href="#"
+              v-scroll-to="'#tagline'"
+              >
+              Learn More
+            </v-btn>
+          </v-layout>
+        </v-parallax>
+      </section>
+
+      <section>
+        <v-layout
+          column
+          wrap
+          class="my-5"
+          align-center
+        >
+          <v-flex xs12 sm4 class="my-3">
+            <div class="text-xs-center">
+              <h2 id='tagline' class="headline">A trustless marketplace powered by smart contracts</h2>
+              <span class="subheading">
+                Free to list as a merchant
+              </span>
+            </div>
+          </v-flex>
+          <v-flex xs12>
+            <v-container grid-list-xl>
+              <v-layout row wrap align-center>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                        <img src="assets/eth.png" alt="Ethereum" height="30">
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">Powered by Ethereum</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Ethereum is the standard for smart contracts and is the first supported currency on the Ethereal Bazaar
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                      <v-icon x-large class="blue--text text--lighten-2">how_to_reg</v-icon>
+                    </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline">Trustless</div>
+                    </v-card-title>
+                    <v-card-text>
+                      Utilizing a customized Escrow smart contract Ethereum is held until purchasers request is resolved by merchant. 
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-card class="elevation-0 transparent">
+                    <v-card-text class="text-xs-center">
+                        <img src="assets/logo.png" alt="Ethereal Bazaar" height="50">                      </v-card-text>
+                    <v-card-title primary-title class="layout justify-center">
+                      <div class="headline text-xs-center">BAZAAR Token</div>
+                    </v-card-title>
+                    <v-card-text>
+                      The BAZAAR Token ICO is active summer 2018. Holders enjoy the benifits of participating in governance and payouts from transaction fees. 
+                    </v-card-text>
+                  </v-card>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-flex>
+        </v-layout>
+      </section>
+
+      <section>
+        <v-parallax src="assets/section.jpg" height="380">
+          <v-layout column align-center justify-center>
+            <div class="headline white--text mb-3 text-xs-center">The Premier Marketplace ICO</div>
+            <h1>Get whitelisted for the presale</h1>
+            <v-btn
+              class="blue lighten-2 mt-5"
+              dark
+              large
+              @click.stop="whitelist = true"
+              >
+              whitelist
+            </v-btn>
+          </v-layout>
+        </v-parallax>
+      </section>
+
+      <section>
+        <v-container grid-list-xl>
+          <v-layout row wrap justify-center class="my-5">
+            <v-flex xs12 sm4>
+              <v-card class="elevation-0 transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div id='vision' class="headline">Team</div>
+                </v-card-title>
+                <v-card-text>
+                    <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="paul-wand"><a class="LI-simple-link" href='https://www.linkedin.com/in/paul-wand?trk=profile-badge'>Paul Wand</a></div>                </v-card-text>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card class="elevation-0 transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline">Contact us</div>
+                </v-card-title>
+                <v-list class="transparent">
+                    <v-list-tile>
+                        <v-list-tile-action>
+                          <v-icon class="blue--text text--lighten-2">email</v-icon>
+                        </v-list-tile-action>
+                        <v-list-tile-content>
+                          <v-list-tile-title><a href='mailto:info@etherealbazaar.com'>info@etherealbazaar.com</a></v-list-tile-title>
+                        </v-list-tile-content>
+                      </v-list-tile>
+    
+                  <v-list-tile>
+                    <v-list-tile-action>
+                      <v-icon class="blue--text text--lighten-2">phone</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                      <v-list-tile-title>801-4777-165</v-list-tile-title>
+                    </v-list-tile-content>
+                  </v-list-tile>
+                </v-list>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </section>
+
+      <v-footer class="purple darken-2">
+        <v-layout row wrap align-center>
+          <v-flex xs12>
+            <div class="white--text ml-3">
+                Made with 
+                <v-icon class="red--text">favorite</v-icon>,
+                <a class="white--text" href="https://vuetifyjs.com/" target="_blank">Vuetify</a> &
+                <a class="white--text" href="https://www.mongodb.com/cloud/stitch/" target="_blank">Stitch</a>
+            </div>
+          </v-flex>
+        </v-layout>
+      </v-footer>
+    </v-content>
+    <v-dialog v-model="whitelist" max-width="500px">
+        <v-card>
+          <v-card-title>
+            <h4>Sign up to be whitelisted</h4>
+            <v-spacer></v-spacer>
+          </v-card-title>
+          <v-card-text>
+          <v-form>
+              <v-text-field
+                v-model="name"
+                :rules="nameRules"
+                label="Name"
+                required
+              ></v-text-field>
+              <v-text-field
+                v-model="email"
+                :rules="emailRules"
+                label="E-mail"
+                required
+              ></v-text-field>
+              <v-text-field
+                v-model="address"
+                :rules="addressRules"
+                label="Ethereum Wallet Address (with ERC20 Support)"
+                required
+              ></v-text-field>
+            </v-form>
+            </v-card-text>
+          <v-card-actions>
+            <v-btn color="error" flat @click.stop="whitelist=false">Cancel</v-btn>
+            <v-btn color="primary" flat @click.stop="submit">Enter</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+      <v-dialog v-model="success" max-width="500px">
+          <v-card>
+            <v-card-title>
+              <h4>Thanks for joining the white list!</h4>
+              <v-spacer></v-spacer>
+            </v-card-title>
+            <v-card-text>
+              <p>
+                You've been added to the white list, 
+                You will recieve an email when the ICO is live on the main net
+              </p>
+
+              </v-card-text>
+            <v-card-actions>
+              <v-btn color="primary" flat @click.stop="success=false">Continue</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+  
+    </v-app>
+ </div>
+ <script src="https://unpkg.com/vue/dist/vue.js"></script>
+ <script src="https://unpkg.com/vue-scrollto"></script>
+ <script src="https://unpkg.com/vue-json-schema@1.1.0/dist/vue-json-schema.js"></script>
+ <script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+ <script src="https://s3.amazonaws.com/stitch-sdks/js/library/v3/stable/stitch.min.js"></script>
+ <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js"></script>
+ <script>
+
+  VueScrollTo.setDefaults({
+      duration: 500
+  })
+   Vue.use(VueScrollTo)
+ 
+   new Vue({
+    el: '#app',
+    data:{
+      whitelist:false,
+      success:false,
+        title: 'ΞTHΞΔRΞΔL 𝓑𝓪𝔃𝓪𝓪𝓻',
+        name: '',
+        nameRules: [
+          v => !!v || 'Name is required',
+        ],
+        email: '',
+        emailRules: [
+          v => !!v || 'E-mail is required',
+          v => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+        ],
+        address: '',
+        addressRules: [
+          v => !!v || 'Eth Address is required',
+          v => /^0x[a-fA-F0-9]{40}$/.test(v) || 'Eth Address must be valid'
+        ]
+
+      },
+      methods : {
+        submit:async function(list){
+          console.log(this);
+          this.whitelist=false;
+          this.success=true;
+          const client = await stitch.StitchClientFactory.create('etherealbazaar-dupkv');
+          const db = client.service('mongodb', 'mongodb-atlas').db('whitelist');
+          await client.login()
+          let people = await  db.collection('people');
+          console.log(people.find());
+          people.insertOne({'name':this.name,'email':this.email,owner_id: client.authedId()}, {upsert:true});                      
+        }
+      }
+    }
+  );
+ </script>
+</body>
+</html>
